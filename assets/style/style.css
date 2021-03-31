@@ -1,0 +1,14 @@
+.header{
+    background-image: linear-gradient(to right, white, yellow);
+}
+
+#button{
+    margin-top: 3vh;
+}
+body{
+    background-color: lightgray;
+}
+
+.card-section{
+    margin-top: 7vh;
+}
