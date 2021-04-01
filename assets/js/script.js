@@ -1,5 +1,5 @@
 //  VARIABLES
-var APIKEY = "f6617c748899498bbd069458947f07dd"
+var APIKEY = ""
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
