@@ -1,5 +1,5 @@
 //  VARIABLES
-var APIKEY = "5275511254394cfab5968fa4a70ea78e"
+var APIKEY = "f6617c748899498bbd069458947f07dd"
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
@@ -32,7 +32,7 @@ var frameEl=document.querySelector("#frame")
 
 function getByIngredients() {
 	fetch(
-		"https://api.spoonacular.com/recipes/findByIngredients?ingredients=fish&number=5&apiKey=" +
+		"https://api.spoonacular.com/recipes/findByIngredients?ingredients=apple&number=5&apiKey=" +
 			APIKEY
 	)
 		.then(function (response) {
