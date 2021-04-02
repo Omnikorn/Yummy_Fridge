@@ -27,14 +27,18 @@ var deletEl = document.querySelector(
 var htmlEl = document.querySelector("html")
 var backEL = document.querySelector(".modal-background")
 var frameEl=document.querySelector("#frame")
+var textEl=document.querySelector("#text_field")
+var searchEl=document.querySelector("#search")
+var searchString= ""
+var input=""
 
 // FUNCTIONS
 
 function getByIngredients() {
-	fetch(
-		"https://api.spoonacular.com/recipes/findByIngredients?ingredients=apple&number=5&apiKey=" +
-			APIKEY
-	)
+
+	fetch(searchString)
+		
+
 		.then(function (response) {
 			return response.json()
 		})
@@ -88,6 +92,18 @@ function getByIngredients() {
 
 
 // BUTTIN AND EVENT LISTENERS
+
+searchEl.addEventListener("click", function(event){
+	event.preventDefault();
+	input=textEl.value.trim();
+	console.log("input=" +input)
+	searchString= "https://api.spoonacular.com/recipes/findByIngredients?ingredients="+input+"&number=4&apiKey=" +
+	APIKEY;
+	console.log("search string is=" + searchString)
+	getByIngredients(searchString)
+
+})
+
 card1btnEl.addEventListener("click", function () {
 	// console.log("this is card 1 being clicked " + URL1)
 	fetch(URL1)
