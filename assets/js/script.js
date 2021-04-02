@@ -1,5 +1,5 @@
 //  VARIABLES
-var APIKEY = "5275511254394cfab5968fa4a70ea78e"
+var APIKEY = ""
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
@@ -35,8 +35,10 @@ var input=""
 // FUNCTIONS
 
 function getByIngredients() {
+
 	fetch(searchString)
 		
+
 		.then(function (response) {
 			return response.json()
 		})
