@@ -1,5 +1,5 @@
 //  VARIABLES
-var APIKEY = "5275511254394cfab5968fa4a70ea78e"
+var APIKEY 
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
@@ -133,7 +133,7 @@ searchEl.addEventListener("click", function(event){
 	input=textEl.value.trim();
 	console.log("input=" +input)
 	searchString= "https://api.spoonacular.com/recipes/findByIngredients?ingredients="+input+"&number=4&apiKey=" +
-	APIKEY;
+	APIKEY
 	console.log("search string is=" + searchString)
 	getByIngredients(searchString)
 
