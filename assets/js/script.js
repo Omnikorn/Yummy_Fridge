@@ -1,5 +1,5 @@
 //  VARIABLES
-var APIKEY = ""
+var APIKEY = "143b08f855ad4db19608e1a7ea39af04"
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
@@ -27,6 +27,12 @@ var deletEl = document.querySelector(
 var htmlEl = document.querySelector("html")
 var backEL = document.querySelector(".modal-background")
 var frameEl=document.querySelector("#frame")
+
+// Get form, item, and shoppinglist
+var addToShoppingList = document.querySelector('#add-to-shoppinglist');
+var shoppinglistItem = document.querySelector('#shopping-list-item');
+var shoppinglist = document.querySelector('#shoppinglist');
+
 
 // FUNCTIONS
 
@@ -85,7 +91,36 @@ function getByIngredients() {
 		})
 }
 
+addToShoppingList.addEventListener('submit', function (event) {
 
+	// Don't submit the form
+	event.preventDefault();
+
+	// Ignore it if the shoppinglist item is empty
+	if (shoppinglistItem.value.length < 1) return;
+
+	// Add item to shoppinglist
+	shoppinglist.innerHTML += '<li>' + shoppinglistItem.value + '</li>';
+
+	// Clear input
+	shoppinglistItem.value = '';
+
+	// Save the list to localStorage
+	localStorage.setItem('shoppinglistItems', shoppinglist.innerHTML);
+
+}, false);
+function clearlist(){
+    localStorage.clear();
+    window.location.reload();
+}
+
+// Check for saved shoppinglist items
+var saved = localStorage.getItem('shoppinglistItems');
+
+// If there are any saved items, update our list
+if (saved) {
+	shoppinglist.innerHTML = saved;
+}
 
 // BUTTIN AND EVENT LISTENERS
 card1btnEl.addEventListener("click", function () {
@@ -158,6 +193,8 @@ backEL.addEventListener("click", function(e){
     modalEL.classList.remove("is-active");
     htmlEl.classList.remove("is-clipped")
 })
+
+
 
 
 getByIngredients()

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="hero is-medium is-bold header">
+    <section class="hero is-small is-bold header">
         <div class="hero-body ">
 
             <h1 class=""></h1>
@@ -28,13 +28,13 @@
             <input type="text" placeholder="Write Ingredients separated by comma" class="input is-large">
             <div class="columns" id="button">
                 <div class="column is-5"></div>
-                <button class="button is-warning is-rounded is-large ">Search</button>
+                <button class="button is-warning is-rounded is-large search-button">Search</button>
             </div>
         </form>
     </section>
     <!-- RECIPE  GO HERE  -->
 
-    <section class="card is-flex card-section">
+    <section class="card is-flex card-section containers">
         <div class="column is-2 cards" id="card1">
             <div class="card is-shady">
                 <div class="card-image">
@@ -47,19 +47,19 @@
 
                         <div class="media-content ">
                             <p class="title is-4 max-line" id="title1"> card 1</p>
-                            
-                        <footer class="card-footer">
-                            <button class="button is-small is-rounded is-success buttons" id="card1button">
-                                Recipe
-                            </button>
-                        </footer>
+
+                            <footer class="card-footer">
+                                <button class="button is-small is-rounded is-success buttons" id="card1button">
+                                    Recipe
+                                </button>
+                            </footer>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-    
+
         <!-- CARD 2 ----------------------------------------------------------------------------- -->
         <div class="column is-2 cards" id="card2 ">
             <div class="card is-shady">
@@ -73,7 +73,7 @@
 
                     <div class="media-content">
                         <p class="title is-4 max-line" id="title2"> card 2</p>
-                        
+
                         <footer class="card-footer">
                             <button class="button is-small is-rounded is-success buttons " id="card2button">
                                 Recipe
@@ -98,7 +98,7 @@
 
                     <div class="media-content">
                         <p class="title is-4 max-line" id="title3"> card 3</p>
-                        
+
                         <footer class="card-footer">
                             <button class="button is-small is-rounded is-success buttons " id="card3button">
                                 Recipe
@@ -131,31 +131,71 @@
                             </button>
                         </footer>
 
+
                     </div>
+
                 </div>
 
             </div>
         </div>
         </div>
+        <div class="column is-2 cards">
+            <div class="card is-shady">
+                <div class="card-image">
+                    <!-- <figure class="image is-4by3"> -->
+                    <img src="./assets/img/Shopping_List.png" alt="Placeholder image" />
+                    </figure>
+                </div>
+                <div class="card-content">
+
+                    <div class="media-content">
+                        <ol id="shoppinglist"></ol>
+
+
+                        <footer class="card-footer">
+
+                            <button class="button is-small is-rounded is-success buttons is-danger"
+                                onclick="clearlist()">Clear</button>
+
+                        </footer>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
     </section>
 
 
-        <!-- MODAL SECTION -->
-        <div class="modal" id="modal1">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Modal title</p>
-                    <button class="delete" aria-label="close"></button>
-                </header>
-                <section class="modal-card-body is-12 mod_size">
-                    <iframe src="" id="frame"></iframe>
-                </section>
-                <footer class="modal-card-foot">
 
-                </footer>
-            </div>
+    <!-- MODAL SECTION -->
+    <div class="modal" id="modal1">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body is-12 mod_size">
+                <iframe src="" id="frame"></iframe>
+            </section>
+            <footer class="modal-card-foot">
+                <form action="submit" id="add-to-shoppinglist">
+                    <input action="submit" class="input is-warning is-rounded" placeholder="create your shopping list"
+                        id="shopping-list-item">
+
+                    <button class=" button is-normal is-warning">Save</button>
+                </form>
+
+
+
+            </footer>
         </div>
+    </div>
 
 
     </section>

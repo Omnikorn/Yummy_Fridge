@@ -53,3 +53,15 @@ body{
   max-height: 3.6em;
   line-height: 1.8em;
 }
+
+.ph-modal::-webkit-input-placeholder{
+    font-size: 12px;
+}
+
+.containers{
+    justify-content: center;
+
+}
+
+
+
