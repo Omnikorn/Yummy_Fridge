@@ -1,67 +1,61 @@
-.header{
+.header {
     background-image: linear-gradient(to right, white, yellow);
 }
 
-#button{
+#button {
     margin-top: 3vh;
-    
-}
-body{
-    background-color: lightgray;
-   
 }
 
-.card-section{
+body {
+    background-color: lightgray;
+}
+
+.card-section {
     margin-top: 7vh;
 }
 
-#frame{
+#frame {
     width: 100%;
     height: 100%;
 }
 
-.mod_size{
-    height: 70vh;
-}
 
-.cards{
+/* .mod_size {
+    height: 70vh;
+} */
+
+.cards {
     display: flex;
     align-items: stretch;
     align-content: stretch;
-    
     /* /* flex: 0 0 100%; */
 }
 
-.buttons{
-    margin: 0 auto;
-    display: flex;
-    align-self: flex-end;
-        flex: 1 1 auto;
-    
-    
+.buttons {
+    width: 100%;
 }
 
-.is-flex{
+.is-flex {
     flex-wrap: wrap;
 }
 
-.max-line{
+.max-line {
     display: block;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  overflow: hidden;
-  max-height: 3.6em;
-  line-height: 1.8em;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
 }
 
-.ph-modal::-webkit-input-placeholder{
+.ph-modal::-webkit-input-placeholder {
     font-size: 12px;
 }
 
-.containers{
+.containers {
     justify-content: center;
-
 }
 
-
-
+.modal-card-head {
+    background-color: yellow;
+}
