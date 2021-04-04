@@ -39,7 +39,7 @@ var nut1 = document.querySelector("#nutrition1button")
 var nut2 = document.querySelector("#nutrition2button")
 var nut3 = document.querySelector("#nutrition3button")
 var nut4 = document.querySelector("#nutrition4button")
-var C = document.querySelector("#modalN")
+var modalNEl = document.querySelector("#modalN")
 var htmlEl = document.querySelector("html")
 var backEL = document.querySelector(".modal-background")
 var frameEl = document.querySelector("#frame")
@@ -234,7 +234,7 @@ nut1.addEventListener("click", function() {
         })
         .then(function(data) {
             console.log("nutrition data" + data)
-            C.classList.add("is-active")
+            modalNEl.classList.add("is-active")
             htmlEl.classList.add("is-clipped")
             carbsEl.textContent = data.nutrition.caloricBreakdown.percentCarbs
             fatEl.textContent = data.nutrition.caloricBreakdown.percentFat
@@ -251,7 +251,7 @@ nut2.addEventListener("click", function() {
         })
         .then(function(data) {
             console.log("nutrition data" + data)
-            C.classList.add("is-active")
+            modalNEl.classList.add("is-active")
             htmlEl.classList.add("is-clipped")
             carbsEl.textContent = data.nutrition.caloricBreakdown.percentCarbs
             fatEl.textContent = data.nutrition.caloricBreakdown.percentFat
@@ -268,7 +268,7 @@ nut3.addEventListener("click", function() {
         })
         .then(function(data) {
             console.log("nutrition data" + data)
-            C.classList.add("is-active")
+            modalNEl.classList.add("is-active")
             htmlEl.classList.add("is-clipped")
             carbsEl.textContent = data.nutrition.caloricBreakdown.percentCarbs
             fatEl.textContent = data.nutrition.caloricBreakdown.percentFat
@@ -284,7 +284,7 @@ nut4.addEventListener("click", function() {
         })
         .then(function(data) {
             console.log("nutrition data" + data)
-            C.classList.add("is-active")
+            modalNEl.classList.add("is-active")
             htmlEl.classList.add("is-clipped")
             carbsEl.textContent = data.nutrition.caloricBreakdown.percentCarbs
             fatEl.textContent = data.nutrition.caloricBreakdown.percentFat
@@ -306,12 +306,12 @@ deletEl.addEventListener("click", function() {
 backEL.addEventListener("click", function(e) {
     e.preventDefault();
     modalEL.classList.remove("is-active")
-    C.classList.remove("is-active")
+    modalNEl.classList.remove("is-active")
     htmlEl.classList.remove("is-clipped")
 })
 
 deletnEl.addEventListener("click", function() {
-    C.classList.remove("is-active");
+    modalNEl.classList.remove("is-active");
     htmlEl.classList.remove("is-clipped")
 })
 
