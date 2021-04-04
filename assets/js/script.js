@@ -1,4 +1,4 @@
-//  VARIABLES
+//  ALL VARIABLES
 var APIKEY = "2f3faf38a7c04dddb4c5403795b9d1d0"
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
@@ -20,6 +20,9 @@ var card1btnEl = document.querySelector("#card1button")
 var card2btnEl = document.querySelector("#card2button")
 var card3btnEl = document.querySelector("#card3button")
 var card4btnEl = document.querySelector("#card4button")
+var cocktail1btnEl = document.querySelector("#cocktail1button")
+var modalCEl = document.querySelector("#modalC")
+
 var modalEL = document.querySelector("#modal1")
 var deletEl = document.querySelector(
     "#modal1 > div.modal-card > header > button"
@@ -27,6 +30,10 @@ var deletEl = document.querySelector(
 var deletnEl = document.querySelector(
     "#modalN > div.modal-card > header > button"
 )
+var deletCEl = document.querySelector(
+    "#modalC > div.modal-card > header > button"
+)
+
 
 var nut1 = document.querySelector("#nutrition1button")
 var nut2 = document.querySelector("#nutrition2button")
@@ -44,6 +51,13 @@ var carbsEl = document.querySelector("#carbs")
 var fatEl = document.querySelector("#fat")
 var proteinEl = document.querySelector("#protein")
 var caloriesEl = document.querySelector("#calories")
+
+var cocktail1btnEl = document.querySelector("#cocktail1button")
+var cocktail2btnEl = document.querySelector("#cocktail2button")
+var cocktail3btnEl = document.querySelector("#cocktail3button")
+var cocktail4btnEl = document.querySelector("#cocktail4button")
+var ingredientCEl = document.querySelector("#ingredientsC")
+var instructionEl = document.querySelector("#instructionC")
 
 // Get form, item, and shoppinglist
 var addToShoppingList = document.querySelector('#add-to-shoppinglist');
@@ -297,14 +311,81 @@ backEL.addEventListener("click", function(e) {
 })
 
 deletnEl.addEventListener("click", function() {
-    modalNEL.classList.remove("is-active");
+    modalNEl.classList.remove("is-active");
     htmlEl.classList.remove("is-clipped")
 })
 
 
+// Cocktail Button
+
+
+cocktail1btnEl.addEventListener("click", function(){
+fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+  .then (function(response){
+   return response.json()})
+  .then(function(data){ 
+   console.log(data)
+   console.log("ing", ingredientCEl)
+   modalCEl.classList.add("is-active")
+   htmlEl.classList.add("is-clipped")
+   ingredientCEl.innerHTML = data.drinks[0].strIngredient1;
+   instructionEl.innerHTML = data.drinks[0].strInstructions;
+  })
+})
+cocktail2btnEl.addEventListener("click", function(){
+	fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+	  .then (function(response){
+	   return response.json()})
+	  .then(function(data){ 
+	   console.log(data)
+	   console.log("ing", ingredientCEl)
+	   modalCEl.classList.add("is-active")
+	   htmlEl.classList.add("is-clipped")
+	   ingredientCEl.innerHTML = data.drinks[0].strIngredient1;
+	   instructionEl.innerHTML = data.drinks[0].strInstructions;
+	  })
+	})
+	cocktail3btnEl.addEventListener("click", function(){
+		fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+		  .then (function(response){
+		   return response.json()})
+		  .then(function(data){ 
+		   console.log(data)
+		   console.log("ing", ingredientCEl)
+		   modalCEl.classList.add("is-active")
+		   htmlEl.classList.add("is-clipped")
+		   ingredientCEl.innerHTML = data.drinks[0].strIngredient1;
+		   instructionEl.innerHTML = data.drinks[0].strInstructions;
+		  })
+		})
+		cocktail4btnEl.addEventListener("click", function(){
+			fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+			  .then (function(response){
+			   return response.json()})
+			  .then(function(data){ 
+			   console.log(data)
+			   console.log("ing", ingredientCEl)
+			   modalCEl.classList.add("is-active")
+			   htmlEl.classList.add("is-clipped")
+			   ingredientCEl.innerHTML = data.drinks[0].strIngredient1;
+			   instructionEl.innerHTML = data.drinks[0].strInstructions;
+			  })
+			})
+			deletCEl.addEventListener("click", function() {
+				console.log("cancel has been clicked")
+				modalCEL.classList.remove("is-active");
+				htmlEl.classList.remove("is-clipped")
+			})
+			
+		
+			backEL.addEventListener("click", function(e) {
+				e.preventDefault();
+				modalCEL.classList.remove("is-active")
+				modalCEl.classList.remove("is-active")
+				htmlEl.classList.remove("is-clipped")
+			})
 
 
 
-// getByIngredients()
 
-// getByIngredients()
+
