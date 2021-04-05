@@ -2,15 +2,15 @@
     background-image: linear-gradient(to right, white, yellow);
 }
 
-#button {
+/* #button {
     margin-top: 3vh;
 }
 
 body {
     background-color: lightgray;
-}
+} */
 
-.card-section {
+/* .card-section {
     margin-top: 7vh;
 }
 
@@ -20,15 +20,11 @@ body {
 }
 
 
-/* .mod_size {
-    height: 70vh;
-} */
 
 .cards {
     display: flex;
     align-items: stretch;
     align-content: stretch;
-    /* /* flex: 0 0 100%; */
 }
 
 .buttons {
@@ -58,4 +54,4 @@ body {
 
 .modal-card-head {
     background-color: yellow;
-}
+} */
