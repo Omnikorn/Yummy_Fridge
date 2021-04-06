@@ -56,9 +56,7 @@
     background-color: yellow;
 } 
 
-.modal-card{
-    background-image: url("../img/cocktailbkg.png");
-}
+
 .is-link{
     margin: 20px 60px 50px auto;
 }
@@ -74,4 +72,12 @@ ul{
 
 .rec-btn{
     width: 150px;
+}
+
+.mod_size{
+    background-image: url(../img/cocktailbkg.png);
+}
+
+.cocktail-area{
+    background-color: lightyellow;
 }
