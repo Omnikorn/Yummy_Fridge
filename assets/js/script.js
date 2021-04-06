@@ -1,4 +1,4 @@
-// last update Andrea 6.4.21 @ 13:10
+// last update Andrea 6.4.21 @ 23:10
 
 //  ALL VARIABLES
 var APIKEY = ""
@@ -55,10 +55,10 @@ var fatEl = document.querySelector("#fat")
 var proteinEl = document.querySelector("#protein")
 var caloriesEl = document.querySelector("#calories")
 
-var closeNelement=document.querySelector("#closeN")
-var closeCelement=document.querySelector("#closeC")
-var cocktailbkg=document.querySelector(".cocktail_bkg")
-var nutritionbkg=document.querySelector(".nutrition_bkg")
+var closeNelement = document.querySelector("#closeN")
+var closeCelement = document.querySelector("#closeC")
+var cocktailbkg = document.querySelector(".cocktail_bkg")
+var nutritionbkg = document.querySelector(".nutrition_bkg")
 
 
 var cocktail1btnEl = document.querySelector("#cocktail1button")
@@ -67,6 +67,9 @@ var cocktail3btnEl = document.querySelector("#cocktail3button")
 var cocktail4btnEl = document.querySelector("#cocktail4button")
 var ingredientCEl = document.querySelector("#ingredientsC")
 var instructionEl = document.querySelector("#instructionC")
+var titleCEl = document.querySelector("#titleC")
+var imageCEl = document.querySelector(".imageC")
+var imgSrc = ""
 
 // Get form, item, and shoppinglist
 var addToShoppingList = document.querySelector("#add-to-shoppinglist")
@@ -81,7 +84,7 @@ function getByIngredients() {
 			return response.json()
 		})
 		.then(function (data) {
-			
+
 			title1El.textContent = data[0].title
 			var att1 = data[0].image
 			img1El.setAttribute("src", att1)
@@ -103,7 +106,7 @@ function getByIngredients() {
 			recp4ID = data[3].id
 
 			console.log("rep 3=" + recp3ID)
-			
+
 			URL1 =
 				"https://api.spoonacular.com/recipes/" +
 				recp1ID +
@@ -124,10 +127,10 @@ function getByIngredients() {
 				recp4ID +
 				"/information?includeNutrition=true&apiKey=" +
 				APIKEY
-            
-                createButtons()
+
+			createButtons()
 		})
-	
+
 }
 
 addToShoppingList.addEventListener(
@@ -337,9 +340,15 @@ cocktail1btnEl.addEventListener("click", function () {
 			modalCEl.classList.add("is-active")
 			htmlEl.classList.add("is-clipped")
 			ingredientCEl.innerHTML =
-				data.drinks[0].strIngredient1
+				data.drinks[0].strIngredient1 + " , " + data.drinks[0].strIngredient2 +" , " + data.drinks[0].strIngredient3
 			instructionEl.innerHTML =
 				data.drinks[0].strInstructions
+			titleCEl.innerHTML = data.drinks[0].strDrink
+			console.log("img", data.drinks[0].strDrinkThumb) 
+			imgSrc = data.drinks[0].strDrinkThumb
+			imageCEl.setAttribute("src", imgSrc )
+			
+			
 		})
 })
 cocktail2btnEl.addEventListener("click", function () {
@@ -355,9 +364,13 @@ cocktail2btnEl.addEventListener("click", function () {
 			modalCEl.classList.add("is-active")
 			htmlEl.classList.add("is-clipped")
 			ingredientCEl.innerHTML =
-				data.drinks[0].strIngredient1
+				data.drinks[0].strIngredient1 + " , " + data.drinks[0].strIngredient2 +" , " + data.drinks[0].strIngredient3
 			instructionEl.innerHTML =
 				data.drinks[0].strInstructions
+				titleCEl.innerHTML = data.drinks[0].strDrink
+			console.log("img", data.drinks[0].strDrinkThumb) 
+			imgSrc = data.drinks[0].strDrinkThumb
+			imageCEl.setAttribute("src", imgSrc )
 		})
 })
 cocktail3btnEl.addEventListener("click", function () {
@@ -373,9 +386,13 @@ cocktail3btnEl.addEventListener("click", function () {
 			modalCEl.classList.add("is-active")
 			htmlEl.classList.add("is-clipped")
 			ingredientCEl.innerHTML =
-				data.drinks[0].strIngredient1
+				data.drinks[0].strIngredient1 + " , " + data.drinks[0].strIngredient2 +" , " + data.drinks[0].strIngredient3
 			instructionEl.innerHTML =
 				data.drinks[0].strInstructions
+				titleCEl.innerHTML = data.drinks[0].strDrink
+			console.log("img", data.drinks[0].strDrinkThumb) 
+			imgSrc = data.drinks[0].strDrinkThumb
+			imageCEl.setAttribute("src", imgSrc )
 		})
 })
 cocktail4btnEl.addEventListener("click", function () {
@@ -391,9 +408,13 @@ cocktail4btnEl.addEventListener("click", function () {
 			modalCEl.classList.add("is-active")
 			htmlEl.classList.add("is-clipped")
 			ingredientCEl.innerHTML =
-				data.drinks[0].strIngredient1
+				data.drinks[0].strIngredient1 + " , " + data.drinks[0].strIngredient2 +" , " + data.drinks[0].strIngredient3
 			instructionEl.innerHTML =
 				data.drinks[0].strInstructions
+				titleCEl.innerHTML = data.drinks[0].strDrink
+			console.log("img", data.drinks[0].strDrinkThumb) 
+			imgSrc = data.drinks[0].strDrinkThumb
+			imageCEl.setAttribute("src", imgSrc )
 		})
 })
 // deletCEl.addEventListener("click", function () {
@@ -409,29 +430,29 @@ cocktail4btnEl.addEventListener("click", function () {
 // 	htmlEl.classList.remove("is-clipped")
 // })
 
-nutritionbkg.addEventListener("click", function(e){
-    e.preventDefault()
-    console.log("background activate")
-    modalNEl.classList.remove("is-active")
+nutritionbkg.addEventListener("click", function (e) {
+	e.preventDefault()
+	console.log("background activate")
+	modalNEl.classList.remove("is-active")
 	htmlEl.classList.remove("is-clipped")
 })
 
-closeNelement.addEventListener("click", function() {
-    console.log("the cancel button clicked")
-    modalNEl.classList.remove("is-active")
+closeNelement.addEventListener("click", function () {
+	console.log("the cancel button clicked")
+	modalNEl.classList.remove("is-active")
 	htmlEl.classList.remove("is-clipped")
 })
 
 
-closeCelement.addEventListener("click", function() {
-    console.log("the cancel button clicked")
-    modalCEl.classList.remove("is-active")
+closeCelement.addEventListener("click", function () {
+	console.log("the cancel button clicked")
+	modalCEl.classList.remove("is-active")
 	htmlEl.classList.remove("is-clipped")
 })
 
-cocktailbkg.addEventListener("click", function(e){
-    e.preventDefault()
-    console.log("background activate")
-    modalCEl.classList.remove("is-active")
+cocktailbkg.addEventListener("click", function (e) {
+	e.preventDefault()
+	console.log("background activate")
+	modalCEl.classList.remove("is-active")
 	htmlEl.classList.remove("is-clipped")
 })
