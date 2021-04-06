@@ -27,9 +27,9 @@
         <form action="submit">
 
             <input type="text" placeholder="Write Ingredients separated by comma" class="input is-large" id="text_field">
-            <div class="columns" id="button">
-                <div class="column is-5"></div>
-                <button class="button is-warning is-rounded is-large search-button" id="search">Search</button>
+            <div class="columns is-flex is-justify-content-flex-start	" id="button">
+                <div class="column is-5 "></div>
+                <button class="button is-warning is-rounded is-large search-button " id="search">Search</button>
             </div>
         </form>
 
@@ -49,18 +49,22 @@
                         <div class="media-content ">
                             <p class="title is-4 max-line" id="title1"> card 1</p>
 
-                            <footer class="card-footer">
+                            <footer class="card-footer is-flex is-justify-content-center">
                                 <a id="ref1" href="" target="_blank">
-                                <button class="button is-small is-rounded is-success buttons" id="card1button">
+                                <button class="button is-small is-rounded is-success buttons " id="card1button">
                                     Recipe
                                 </button></a>
-                                <button class="button is-small is-rounded is-warning buttons" id="nutrition1button">
-                                    Nutrition
-                                </button>
-                                <button class="button is-small is-rounded is-warning buttons" id="cocktail1button">
-                                    cocktail
-                                </button>
                             </footer>
+                            <footer class="is-flex is-justify-content-center">
+                            <button class="button is-small is-rounded is-warning buttons" id="nutrition1button">
+                                Nutrition
+                            </button>
+                        </footer>
+                        <footer class="is-flex is-justify-content-center">
+                            <button class="button is-small is-rounded is-warning buttons" id="cocktail1button">
+                                cocktail
+                            </button>
+                        </footer>
                         </div>
                     </div>
 
@@ -81,18 +85,22 @@
                     <div class="media-content">
                         <p class="title is-4 max-line" id="title2"> card 2</p>
 
-                        <footer class="card-footer">
+                        <footer class="card-footer is-flex is-justify-content-center">
                             <a id="ref2" href="" target="_blank"><button class="button is-small is-rounded is-success buttons " id="card2button">
                                 Recipe
                             </button></a>
-                            <button class="button is-small is-rounded is-warning buttons " id="nutrition2button">
-                                Nutrition
-                            </button>
-                            <button class="button is-small is-rounded is-warning buttons" id="cocktail2button">
-                                cocktail
-                            </button>
                             
                         </footer>
+                        <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="nutrition1button">
+                            Nutrition
+                        </button>
+                    </footer >
+                    <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="cocktail1button">
+                            cocktail
+                        </button>
+                    </footer>
                     </div>
                 </div>
 
@@ -112,17 +120,21 @@
                     <div class="media-content">
                         <p class="title is-4 max-line" id="title3"> card 3</p>
 
-                        <footer class="card-footer">
+                        <footer class="card-footer is-flex is-justify-content-center">
                             <a id="ref3" href="" target="_blank"><button class="button is-small is-rounded is-success buttons " id="card3button">
                                 Recipe
                             </button></a>
-                            <button class="button is-small is-rounded is-warning buttons " id="nutrition3button">
-                                Nutrition
-                            </button>
-                            <button class="button is-small is-rounded is-warning buttons" id="cocktail3button">
-                                cocktail
-                            </button>
                         </footer>
+                        <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="nutrition1button">
+                            Nutrition
+                        </button>
+                    </footer>
+                    <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="cocktail1button">
+                            cocktail
+                        </button>
+                    </footer>
                     </div>
                 </div>
 
@@ -143,17 +155,21 @@
                         <p class="title is-4 max-line" id="title4"> card 4</p>
 
 
-                        <footer class="card-footer">
+                        <footer class="card-footer is-flex is-justify-content-center">
                             <a id="ref4" href="" target="_blank"><button class="button is-small is-rounded is-success buttons " id="card4button">
                                 Recipe
                             </button></a>
-                            <button class="button is-small is-rounded is-warning buttons" id="nutrition4button">
-                                Nutrition
-                            </button>
-                            <button class="button is-small is-rounded is-warning buttons" id="cocktail4button">
-                                cocktail
-                            </button>
                         </footer>
+                        <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="nutrition1button">
+                            Nutrition
+                        </button>
+                    </footer>
+                    <footer class="is-flex is-justify-content-center">
+                        <button class="button is-small is-rounded is-warning buttons" id="cocktail1button">
+                            cocktail
+                        </button>
+                    </footer>
 
 
                     </div>
@@ -173,14 +189,14 @@
                 <div class="card-content">
 
                     <div class="media-content">
-                        <ol id="shoppinglist"></ol>
+                        <ul id="shoppinglist" class="list"></ul>
 
 
                         <footer class="card-footer">
-                            <form action="submit" id="add-to-shoppinglist">
-                                <input action="submit" class="input is-warning is-rounded" placeholder="create your shopping list" id="shopping-list-item">
+                            <form action="submit" id="add-to-shoppinglist" class="form-list">
+                                <input action="submit" class="input is-warning is-rounded ph-modal" placeholder="create your shopping list" id="shopping-list-item">
             
-                                <button class=" button is-normal is-warning">Save</button>
+                                <button class="is-flex is-justify-content-center button is-normal is-link">Save</button>
 
                             <button class="button is-small is-rounded is-success buttons is-danger" onclick="clearlist()">Clear</button>
 
