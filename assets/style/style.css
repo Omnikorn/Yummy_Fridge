@@ -26,6 +26,7 @@
 .buttons {
     width: 80%;
     margin: 17px;
+    justify-content: center;
 }
 
 .is-flex {
@@ -69,4 +70,8 @@
 ul{
     font-size: 30px;
     
+}
+
+.rec-btn{
+    width: 150px;
 }
