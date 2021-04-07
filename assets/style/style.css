@@ -4,7 +4,181 @@
 
  #button {
     margin-top: 3vh;
+    
 }
+
+#card4button,
+#car3button,
+#card2button,
+#card1button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+#card4button::before,
+#card3button::before,
+#card2button::before,
+#card1button::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#card2button:hover::before,
+#card2button:focus::before,
+#card3button:hover::before,
+#card3button:focus::before,
+#card4button:hover::before,
+#card4button:hover::before,
+#card1button:hover::before,
+#card1button:focus::before{
+    transform: scaleX(1);
+}
+
+#card2button,
+#card3button,
+#card4button,
+#card1button{
+    z-index: 1;
+}
+
+#nutrition1button,
+#nutrition2button,
+#nutrition3button,
+#nutrition4button{
+    background-color: #40E0D0;
+    position: relative;
+    cursor: pointer;
+}
+
+#nutrition1button::before,
+#nutrition2button::before,
+#nutrition3button::before,
+#nutrition4button::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    
+    transition: all 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+#nutrition1button:hover::before,
+#nutrition1button:focus::before,
+#nutrition2button:hover::before,
+#nutrition2button:focus::before,
+#nutrition3button:hover::before,
+#nutrition3button:focus::before,
+#nutrition4button:hover::before,
+#nutrition4button:focus::before{
+    transform: scaleX(1);
+    
+}
+
+#nutrition1button,
+#nutrition2button,
+#nutrition3button,
+#nutrition4button{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+#nutrition1button:hover,
+#nutrition1button:focus,
+#nutrition2button:hover,
+#nutrition2button:focus,
+#nutrition3button:hover,
+#nutrition3button:focus,
+#nutrition4button:hover,
+#nutrition4button:focus{
+    color: white;
+    
+}
+/* coctail buttons styling */
+
+#cocktail1button,
+#cocktail2button,
+#cocktail3button,
+#cocktail4button{
+    
+    position: relative;
+    cursor: pointer;
+}
+
+#cocktail1button::before,
+#cocktail2button::before,
+#cocktail3button::before,
+#cocktail4button::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    
+    transition: all 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+#cocktail1button:hover::before,
+#cocktail1button:focus::before,
+#cocktail2button:hover::before,
+#cocktail2button:focus::before,
+#cocktail3button:hover::before,
+#cocktail3button:focus::before,
+#cocktail4button:hover::before,
+#cocktail4button:focus::before{
+    transform: scaleX(1);
+    
+}
+
+#cocktail1button,
+#cocktail2button,
+#cocktail3button,
+#cocktail4button{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+#cocktail1button:hover,
+#cocktail1button:focus,
+#cocktail2button:hover,
+#cocktail2button:focus,
+#cocktail3button:hover,
+#cocktail3button:focus,
+#cocktail4button:hover,
+#cocktail4button:focus{
+    color: white;
+    
+}
+
+
+
+
+
+
 
 
 
