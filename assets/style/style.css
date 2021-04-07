@@ -265,6 +265,16 @@ ul{
     font-weight: bold;
 }
 
-footer{
+.card-foot{
     height: 80px;
 }
+
+.fa-fonts{
+    font-size: 20px;
+}
+
+.footer-align{
+    text-align: center;
+}
+
+.link-gh:visited{ color: white }
