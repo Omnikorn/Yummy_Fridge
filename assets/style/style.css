@@ -7,6 +7,46 @@
     
 }
 
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #693ff4 50%, rgb(0, 255, 42) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
 #card4button,
 #car3button,
 #card2button,
@@ -221,8 +261,18 @@
     font-weight: bold;
 }
 
+#card1,
+#card2,
+#card3,
+#card4{
+    margin-right: 30px;
+}
 .containers {
     justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    border-right: 0;
     
 }
 
@@ -266,7 +316,7 @@ ul{
 }
 
 .card-foot{
-    height: 80px;
+    height: 47px;
 }
 
 .fa-fonts{
