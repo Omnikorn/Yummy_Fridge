@@ -1,7 +1,7 @@
 // last update andrea 7.4.21 @ 20.00
 
 //  ALL VARIABLES
-var APIKEY = "23b6c362a5ba4085be08942e909c1e7d"
+var APIKEY = "5275511254394cfab5968fa4a70ea78e"
 var img1El = document.querySelector("#img1")
 var img2El = document.querySelector("#img2")
 var img3El = document.querySelector("#img3")
