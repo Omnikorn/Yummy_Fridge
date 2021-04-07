@@ -16,7 +16,7 @@ font-family: 'New Tegomin', serif;
   
   body {
     margin:0;
-    /* width: 100vw; */
+    width: 100vw;
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'New Tegomin', serif;
   }
@@ -224,7 +224,9 @@ font-family: 'New Tegomin', serif;
 }
 
 
-
+.hero{
+    width: 104%;
+}
 
 
 
@@ -235,6 +237,7 @@ font-family: 'New Tegomin', serif;
     margin-top: 7vh;
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'New Tegomin', serif;
+    background: transparent;
 }
 
 #frame {
@@ -246,6 +249,7 @@ font-family: 'New Tegomin', serif;
 
 .cards {
     margin-left: 30px;
+    background: transparent;
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'New Tegomin', serif;
 }
@@ -369,9 +373,9 @@ ul{
 .link-gh:visited{ color: white }
 
 @media screen and (max-width: 992px){
-.bg{
+/* .bg{
     width:117.5%;
-}
+} */
 }
 
 .end-footer{
