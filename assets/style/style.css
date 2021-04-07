@@ -293,9 +293,8 @@ font-family: 'New Tegomin', serif;
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    border-right: 0;
+    border-right: 0;}
     
-}
 
 .modal-card-head {
     background-color: yellow;
@@ -373,6 +372,14 @@ ul{
 .bg{
     width:117.5%;
 }
+}
+
+.end-footer{
+    height: 350px;
+}
+
+.fa-fonts, .copyright{
+    margin-top: 50px;
 }
 
     
