@@ -1,4 +1,4 @@
-.header {
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=New+Tegomin&display=swap');.header {
     background-image: linear-gradient(to right, white, yellow);
 }
 
@@ -10,11 +10,15 @@
 html {
     height:100%;
     width: 100vw;
-  }
+    font-family: 'Cedarville Cursive', cursive;
+font-family: 'New Tegomin', serif;
+}
   
   body {
     margin:0;
     /* width: 100vw; */
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
   }
   
   .bg {
@@ -229,6 +233,8 @@ html {
 
  .card-section {
     margin-top: 7vh;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 #frame {
@@ -240,16 +246,22 @@ html {
 
 .cards {
     margin-left: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .buttons {
     width: 80%;
     margin: 17px;
     justify-content: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .is-flex {
     flex-wrap: wrap;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .max-line {
@@ -259,11 +271,15 @@ html {
     overflow: hidden;
     max-height: 3.6em;
     line-height: 1.8em;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .ph-modal::-webkit-input-placeholder {
     font-size: 11px;
     font-weight: bold;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 #card1,
@@ -283,32 +299,47 @@ html {
 
 .modal-card-head {
     background-color: yellow;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 } 
 
 
 .is-link{
     margin: 20px  auto;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .form-list{
     margin-top: 10px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 ul{
     font-size: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
     
 }
 
 .rec-btn{
     width: 150px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .mod_size{
     background-image: url(../img/cocktailbkg.png);
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .cocktail-area{
     background-color: lightyellow;
+    padding: 1vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .fridge{
@@ -318,10 +349,14 @@ ul{
 .search-placeholder::-webkit-input-placeholder {
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .card-foot{
     height: 47px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .fa-fonts{
