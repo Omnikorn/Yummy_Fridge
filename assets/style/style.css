@@ -232,7 +232,7 @@
 
 
 .is-link{
-    margin: 20px 60px 50px auto;
+    margin: 20px  auto;
 }
 
 .form-list{
@@ -254,4 +254,17 @@ ul{
 
 .cocktail-area{
     background-color: lightyellow;
+}
+
+.fridge{
+    margin-left: 70px;
+}
+
+.search-placeholder::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer{
+    height: 80px;
 }
