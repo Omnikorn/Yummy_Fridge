@@ -397,12 +397,14 @@ ul{
        }
    }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 900px){
 /* .bg{
     width:117.5%;
 } */
-}
 
+.img-container{
+    display: none;
+}
 .end-footer{
     height: 350px;
 }
@@ -410,5 +412,5 @@ ul{
 .fa-fonts, .copyright{
     margin-top: 50px;
 }
-
+}
     
