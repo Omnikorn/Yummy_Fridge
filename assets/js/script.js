@@ -214,6 +214,7 @@ searchEl.addEventListener("click", function (event) {
 		"&number=4&apiKey=" +
 		APIKEY
 	console.log("search string is=" + searchString)
+	
 	getByIngredients(searchString)
 })
 
