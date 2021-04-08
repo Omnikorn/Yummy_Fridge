@@ -1,399 +1,389 @@
-            @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=New+Tegomin&display=swap');
-            .header {
-                background-image: linear-gradient(to right, white, yellow);
-            }
-            
-            #button {
-                margin-top: 3vh;
-            }
-            
-            html {
-                height: 100%;
-                width: 100vw;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            body {
-                margin: 0;
-                width: 100vw;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .bg {
-                animation: slide 3s ease-in-out infinite alternate;
-                background-image: linear-gradient(-60deg, #693ff4 50%, rgb(0, 255, 42) 50%);
-                bottom: 0;
-                /* width: 117.5%; */
-                left: -50%;
-                opacity: .5;
-                position: fixed;
-                right: -50%;
-                top: 0;
-                z-index: -1;
-            }
-            
-            .bg2 {
-                animation-direction: alternate-reverse;
-                animation-duration: 4s;
-                /* width: 100%; */
-            }
-            
-            .bg3 {
-                animation-duration: 5s;
-                /* width: 100%; */
-            }
-            
-            @keyframes slide {
-                0% {
-                    transform: translateX(-25%);
-                }
-                100% {
-                    transform: translateX(25%);
-                }
-            }
-            
-            #card4button,
-            #car3button,
-            #card2button,
-            #card1button {
-                position: relative;
-                cursor: pointer;
-                border: none;
-            }
-            
-            #card4button::before,
-            #card3button::before,
-            #card2button::before,
-            #card1button::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                border-radius: 10px;
-                z-index: -1;
-                background-color: #A569BD;
-                transition: transform 300ms ease-in-out;
-                transform: scaleX(0);
-                transform-origin: left;
-            }
-            
-            #card2button:hover::before,
-            #card2button:focus::before,
-            #card3button:hover::before,
-            #card3button:focus::before,
-            #card4button:hover::before,
-            #card4button:hover::before,
-            #card1button:hover::before,
-            #card1button:focus::before {
-                transform: scaleX(1);
-            }
-            
-            #card2button,
-            #card3button,
-            #card4button,
-            #card1button {
-                z-index: 1;
-            }
-            
-            #nutrition1button,
-            #nutrition2button,
-            #nutrition3button,
-            #nutrition4button {
-                background-color: #40E0D0;
-                position: relative;
-                cursor: pointer;
-            }
-            
-            #nutrition1button::before,
-            #nutrition2button::before,
-            #nutrition3button::before,
-            #nutrition4button::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                border-radius: 10px;
-                z-index: -1;
-                background-color: #A569BD;
-                transition: all 300ms ease-in-out;
-                transform: scaleX(0);
-                transform-origin: left;
-            }
-            
-            #nutrition1button:hover::before,
-            #nutrition1button:focus::before,
-            #nutrition2button:hover::before,
-            #nutrition2button:focus::before,
-            #nutrition3button:hover::before,
-            #nutrition3button:focus::before,
-            #nutrition4button:hover::before,
-            #nutrition4button:focus::before {
-                transform: scaleX(1);
-            }
-            
-            #nutrition1button,
-            #nutrition2button,
-            #nutrition3button,
-            #nutrition4button {
-                transition: color 300ms ease-in-out;
-                z-index: 1;
-            }
-            
-            #nutrition1button:hover,
-            #nutrition1button:focus,
-            #nutrition2button:hover,
-            #nutrition2button:focus,
-            #nutrition3button:hover,
-            #nutrition3button:focus,
-            #nutrition4button:hover,
-            #nutrition4button:focus {
-                color: white;
-            }
-            /* coctail buttons styling */
-            
-            #cocktail1button,
-            #cocktail2button,
-            #cocktail3button,
-            #cocktail4button {
-                position: relative;
-                cursor: pointer;
-            }
-            
-            #cocktail1button::before,
-            #cocktail2button::before,
-            #cocktail3button::before,
-            #cocktail4button::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                border-radius: 10px;
-                z-index: -1;
-                background-color: #A569BD;
-                transition: all 300ms ease-in-out;
-                transform: scaleX(0);
-                transform-origin: left;
-            }
-            
-            #cocktail1button:hover::before,
-            #cocktail1button:focus::before,
-            #cocktail2button:hover::before,
-            #cocktail2button:focus::before,
-            #cocktail3button:hover::before,
-            #cocktail3button:focus::before,
-            #cocktail4button:hover::before,
-            #cocktail4button:focus::before {
-                transform: scaleX(1);
-            }
-            
-            #cocktail1button,
-            #cocktail2button,
-            #cocktail3button,
-            #cocktail4button {
-                transition: color 300ms ease-in-out;
-                z-index: 1;
-            }
-            
-            #cocktail1button:hover,
-            #cocktail1button:focus,
-            #cocktail2button:hover,
-            #cocktail2button:focus,
-            #cocktail3button:hover,
-            #cocktail3button:focus,
-            #cocktail4button:hover,
-            #cocktail4button:focus {
-                color: white;
-            }
-            
-            .hero {
-                width: 104%;
-            }
-            
-            .card-section {
-                margin-top: 7vh;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-                background: transparent;
-            }
-            
-            #frame {
-                width: 100%;
-                height: 100%;
-            }
-            
-            .cards {
-                margin-left: 30px;
-                background: transparent;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .buttons {
-                width: 80%;
-                margin: 17px;
-                justify-content: center;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .is-flex {
-                flex-wrap: wrap;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .max-line {
-                display: block;
-                text-overflow: ellipsis;
-                word-wrap: break-word;
-                overflow: hidden;
-                max-height: 3.6em;
-                line-height: 1.8em;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .ph-modal::-webkit-input-placeholder {
-                font-size: 11px;
-                font-weight: bold;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            #card1,
-            #card2,
-            #card3,
-            #card4 {
-                margin-right: 30px;
-            }
-            
-            .containers {
-                justify-content: center;
-                width: 100%;
-                margin-right: 0;
-                margin-left: 0;
-                border-right: 0;
-            }
-            
-            .modal-card-head {
-                background-color: yellow;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .is-link {
-                margin: 20px auto;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .form-list {
-                margin-top: 10px;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            ul {
-                font-size: 30px;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .rec-btn {
-                width: 150px;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .mod_size {
-                background-image: url(../img/cocktailbkg.png);
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .cocktail-area {
-                background-color: lightyellow;
-                padding: 1vw;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .fridge {
-                margin-left: 70px;
-            }
-            
-            .search-placeholder::-webkit-input-placeholder {
-                font-size: 18px;
-                font-weight: bold;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .card-foot {
-                height: 47px;
-                font-family: 'Cedarville Cursive', cursive;
-                font-family: 'New Tegomin', serif;
-            }
-            
-            .fa-fonts {
-                font-size: 20px;
-            }
-            
-            .footer-align {
-                text-align: center;
-            }
-            
-            .link-gh:visited {
-                color: white
-            }
-            
-            .img-container {
-                animation: anim 5s;
-            }
-            
-            .yummy-container {
-                position: absolute;
-                left: 50%;
-            }
-            
-            @keyframes anim {
-                0% {
-                    transform: scaleX(0);
-                    transform-origin: 0% 50%;
-                }
-                50% {
-                    transform: scaleX(1);
-                    transform-origin: 0% 50%;
-                }
-                51% {
-                    transform: scaleX(1);
-                    transform-origin: 100% 50%;
-                }
-                100% {
-                    transform: scaleX(0);
-                    transform-origin: 100% 50%;
-                }
-            }
-            
-            @media screen and (max-width: 992px) {
-                /* .bg{
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=New+Tegomin&display=swap');.header {
+    background-image: linear-gradient(to right, white, yellow);
+}
+
+ #button {
+    margin-top: 3vh;
+    
+}
+
+html {
+    height:100%;
+    width: 100vw;
+    font-family: 'Cedarville Cursive', cursive;
+font-family: 'New Tegomin', serif;
+}
+  
+  body {
+    margin:0;
+    width: 100vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #693ff4 50%, rgb(0, 255, 42) 50%);
+    bottom:0;
+    /* width: 117.5%; */
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+    /* width: 100%; */
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+    /* width: 100%; */
+  }
+  
+
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+#card4button,
+#car3button,
+#card2button,
+#card1button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+#card4button::before,
+#card3button::before,
+#card2button::before,
+#card1button::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#card2button:hover::before,
+#card2button:focus::before,
+#card3button:hover::before,
+#card3button:focus::before,
+#card4button:hover::before,
+#card4button:hover::before,
+#card1button:hover::before,
+#card1button:focus::before{
+    transform: scaleX(1);
+}
+
+#card2button,
+#card3button,
+#card4button,
+#card1button{
+    z-index: 1;
+}
+
+#nutrition1button,
+#nutrition2button,
+#nutrition3button,
+#nutrition4button{
+    background-color: #40E0D0;
+    position: relative;
+    cursor: pointer;
+}
+
+#nutrition1button::before,
+#nutrition2button::before,
+#nutrition3button::before,
+#nutrition4button::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    
+    transition: all 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+#nutrition1button:hover::before,
+#nutrition1button:focus::before,
+#nutrition2button:hover::before,
+#nutrition2button:focus::before,
+#nutrition3button:hover::before,
+#nutrition3button:focus::before,
+#nutrition4button:hover::before,
+#nutrition4button:focus::before{
+    transform: scaleX(1);
+    
+}
+
+#nutrition1button,
+#nutrition2button,
+#nutrition3button,
+#nutrition4button{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+#nutrition1button:hover,
+#nutrition1button:focus,
+#nutrition2button:hover,
+#nutrition2button:focus,
+#nutrition3button:hover,
+#nutrition3button:focus,
+#nutrition4button:hover,
+#nutrition4button:focus{
+    color: white;
+    
+}
+/* coctail buttons styling */
+
+#cocktail1button,
+#cocktail2button,
+#cocktail3button,
+#cocktail4button{
+    
+    position: relative;
+    cursor: pointer;
+}
+
+#cocktail1button::before,
+#cocktail2button::before,
+#cocktail3button::before,
+#cocktail4button::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: #A569BD;
+    
+    transition: all 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+#cocktail1button:hover::before,
+#cocktail1button:focus::before,
+#cocktail2button:hover::before,
+#cocktail2button:focus::before,
+#cocktail3button:hover::before,
+#cocktail3button:focus::before,
+#cocktail4button:hover::before,
+#cocktail4button:focus::before{
+    transform: scaleX(1);
+    
+}
+
+#cocktail1button,
+#cocktail2button,
+#cocktail3button,
+#cocktail4button{
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+#cocktail1button:hover,
+#cocktail1button:focus,
+#cocktail2button:hover,
+#cocktail2button:focus,
+#cocktail3button:hover,
+#cocktail3button:focus,
+#cocktail4button:hover,
+#cocktail4button:focus{
+    color: white;
+    
+}
+
+
+.hero{
+    width: 104%;
+}
+
+
+
+
+
+
+ .card-section {
+    margin-top: 7vh;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+    background: transparent;
+}
+
+#frame {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cards {
+    margin-left: 30px;
+    background: transparent;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.buttons {
+    width: 80%;
+    margin: 17px;
+    justify-content: center;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.is-flex {
+    flex-wrap: wrap;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.max-line {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.ph-modal::-webkit-input-placeholder {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+#card1,
+#card2,
+#card3,
+#card4{
+    margin-right: 30px;
+}
+.containers {
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    border-right: 0;}
+    
+
+.modal-card-head {
+    background-color: yellow;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+} 
+
+
+.is-link{
+    margin: 20px  auto;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.form-list{
+    margin-top: 10px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+ul{
+    font-size: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+    
+}
+
+.rec-btn{
+    width: 150px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.mod_size{
+    background-image: url(../img/cocktailbkg.png);
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.cocktail-area{
+    background-color: lightyellow;
+    padding: 1vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.fridge{
+    margin-left: 70px;
+}
+
+.search-placeholder::-webkit-input-placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.card-foot{
+    height: 47px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'New Tegomin', serif;
+}
+
+.fa-fonts{
+    font-size: 20px;
+}
+
+.footer-align{
+    text-align: center;
+}
+
+.link-gh:visited{ color: white }
+
+@media screen and (max-width: 992px){
+/* .bg{
     width:117.5%;
 } */
-            }
-            
-            .end-footer {
-                height: 350px;
-            }
-            
-            .fa-fonts,
-            .copyright {
-                margin-top: 50px;
-            }
+}
+
+.end-footer{
+    height: 350px;
+}
+
+.fa-fonts, .copyright{
+    margin-top: 50px;
+}
+
+    
