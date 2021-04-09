@@ -1,9 +1,6 @@
-<div style="display:inline-block; margin: 0 auto;">
-<img src="./assets/img/fridge_yellow.png" > 
-            </div>
-            <div style="display:inline-block; margin:0 auto;">
-            <img src="./assets/img/yummy3.png" >
-            </div>
+
+<img src="./assets/img/readme-header.png" > 
+           
 
 
 
