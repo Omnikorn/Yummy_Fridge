@@ -1,14 +1,18 @@
-<img src="./assets/img/fridge_yellow.png"  
-     style="display:block; 
-            float:none; 
-            margin-left:auto; 
-            margin-right:auto;"> 
-            <br/>
-            <img src="./assets/img/yummy3.png"  
-     style="display:block; 
-            float:none; 
-            margin-left:auto; 
-            margin-right:auto;"> 
+<div style="display:inline-block; margin: 0 auto;">
+<img src="./assets/img/fridge_yellow.png" > 
+            </div>
+            <div style="display:inline-block; margin:0 auto;">
+            <img src="./assets/img/yummy3.png" >
+            </div>
+
+
+
+
+
+
+
+
+
 
 
 ## Table of Contents
@@ -106,9 +110,15 @@ SOFTWARE_
 
 # Video Presentation
 
-<video width="320" height="240" controls>
-  <source src="./assets/video/YUMMY_FRIDGE.mov" type="video/mp4">
-</video>
+
+<img src="./assets/img/YUMMY_FRIDGE.gif" > 
+
+
+
+
+<a href="https://www.youtube.com/watch?v=hiYRwIj0Gjk"> _Full Video Link_ </a>
+
+
 
 ## Collaborator
 
