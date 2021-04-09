@@ -3,6 +3,7 @@
             float:none; 
             margin-left:auto; 
             margin-right:auto;"> 
+            <br/>
             <img src="./assets/img/yummy3.png"  
      style="display:block; 
             float:none; 
@@ -15,14 +16,16 @@
 * [Description](#Yummy)
 * [Wireframe](#Wireframe)
 * [User Story](#User_Story)
-* [How It Works](#How_it_Works)
+* [Framework CSS](#CSS-Framework)
+* [How It Works](#How-it-Works)
 * [Links](#links)
 * [Screenshots](#Screenshots)
 * [Installation](#installation)
 * [Usage](#Usage)
 * [Licence](#Licence)
+* [Collaborator](#Collaborator)
+* [Video Presentation](Video-Presentation)
 * [Badge](#Badge)
-
 
 
 ## Yummy Fridge  
@@ -32,8 +35,12 @@ This is an interactive recipe recommendation app. Based on the ingredient(s) sub
 * HTML
 * CSS
 * Javascript
-* Jquery
+
+## CSS Framework
+
 * Bulma.io
+
+_Bulma is a free, open source framework that provides ready-to-use frontend components that you can easily combine to build responsive web interfaces._
 
 ## Wireframe
 
@@ -50,7 +57,7 @@ Thinks of this scenario playing over and over across the nation. A nurse coming 
 * [Code Repository](https://github.com/Lloret82/Yummy_Fridge)
 * [Live website](https://lloret82.github.io/Yummy_Fridge)
 
-## How_it_Works
+## How it Works
 
 Yummy Fridge is an interactive recipe search application. The user inputs one or more ingredients into a search field area. The app generates an API request to Spoonacular to search their 5000 strong recipe database and returns 4 recipes with the needed ingredients. 
 These are displayed to the end user as 4 cards with the name of the meal and an appetising picture of the meal. Under each picture are 3 buttons. A meal button, a nutrition button and a cocktail button.  The app including the cards and button is based on a Bulma CSS framework. 
@@ -79,13 +86,14 @@ A handy shopping list is also included. The user can add ingredients they do not
 
 ## Licence
 
+
 #### Copyright (c) [2021] [Team 1, Project 1]
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+furnished to do so, subject to the following conditions :
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -96,14 +104,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE_
 
-## Badge
-![badge](https://img.shields.io/amo/rating/5?style=plastic)
-![badge](https://img.shields.io/github/release-date/Lloret82/Horiseon_Code_Refactor_Homework_1)
+# Video Presentation
+
+<video width="320" height="240" controls>
+  <source src="./assets/video/YUMMY_FRIDGE.mov" type="video/mp4">
+</video>
 
 ## Collaborator
 
 * Dana Alami - <a href="https://github.com/Danaalami-cloud"> Github </a>
 * Harith Albadry - <a href="https://github.com/Danaalami-cloud"> Github </a>
+
+## Badge
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)
+![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 
 
