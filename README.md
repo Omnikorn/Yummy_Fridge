@@ -55,8 +55,8 @@ Thinks of this scenario playing over and over across the nation. A nurse coming 
 
 ## Links
 
-* [Code Repository](https://github.com/Lloret82/Yummy_Fridge)
-* [Live website](https://lloret82.github.io/Yummy_Fridge)
+* [Code Repository](https://github.com/Omnikorn/Yummy_Fridge)
+* [Live website](https://omnikorn.github.io/Yummy_Fridge/)
 
 ## How it Works
 
@@ -120,7 +120,7 @@ SOFTWARE_
 ## Collaborator
 
 * Dana Alami - <a href="https://github.com/Danaalami-cloud"> Github </a>
-* Harith Albadry - <a href="https://github.com/Danaalami-cloud"> Github </a>
+* Andrea Di Bartolomeo - <a href="https://github.com/Lloret82"> Github </a>
 
 ## Badge
 ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
